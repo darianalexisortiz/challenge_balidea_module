@@ -1,0 +1,17 @@
+{
+    "name": "drupal/challenge_balidea_module",
+    "description": "Module for the challenge for Balidea",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "support": {
+        "issues": "https://github.com/darianalexisortiz/challenge_balidea_module/issues",
+        "source": "https://github.com/darianalexisortiz/challenge_balidea_module"
+    },
+    "authors": [
+        {
+            "name": "Darian Alexis Ortiz",
+            "email": "dalexiso@gmail.com"
+        }
+    ],
+    "require": {}
+}

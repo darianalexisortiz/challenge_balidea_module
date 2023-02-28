@@ -1,0 +1,20 @@
+challenge_balidea_module.settings:
+  type: config_object
+  label: 'Challenge Balidea module settings'
+  mapping:
+    integer:
+      type: integer
+      label: 'Number integer'
+    text:
+      type: mapping
+      label: 'Text with text format'
+      mapping:
+        value:
+          type: text
+          label: 'Text'
+        format:
+          type: string
+          label: 'Text format'
+    language:
+      type: string
+      label: 'Language code'

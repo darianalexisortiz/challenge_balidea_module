@@ -1,0 +1,14 @@
+challenge_balidea_module.settings_form:
+  title: 'Challenge Balidea settings'
+  description: 'Configure Challenge Balidea settings.'
+  parent: system.admin_config_system
+  route_name: challenge_balidea_module.settings_form
+  weight: 10
+
+challenge_balidea_module.controller:
+  title: 'Challenge Balidea'
+  description: 'Configure Challenge Balidea module.'
+  parent: main
+  menu_name: main
+  route_name: challenge_balidea_module.controller
+  weight: 10

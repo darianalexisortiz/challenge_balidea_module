@@ -1,0 +1,5 @@
+challenge_balidea_module.settings_form:
+  title: 'Challenge Balidea module'
+  base_route_name: challenge_balidea_module.settings_form
+  names:
+    - challenge_balidea_module.settings

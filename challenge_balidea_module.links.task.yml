@@ -1,0 +1,4 @@
+challenge_balidea_module.settings_tab:
+  route_name: challenge_balidea_module.settings_form
+  title: 'Edit'
+  base_route: challenge_balidea_module.settings_form

@@ -1,0 +1,7 @@
+name: Challenge Balidea module
+type: module
+description: Custom module for the Balidea Drupal challenge
+package: Balidea
+core_version_requirement: ^9 || ^10
+configure: challenge_balidea_module.settings_form
+

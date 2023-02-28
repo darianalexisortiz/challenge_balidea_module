@@ -1,0 +1,14 @@
+<div class="challenge-balidea-text-color">
+  {% if integer is not empty %}<p>{{ 'Integer number '|t ~ ': ' }}{{ integer }}</p>{% endif %}
+  {% if text.value is not empty %}<p>{{ 'Information text'|t ~ ': ' }}{{ text.value|t }}</p>{% endif %}
+  {% if not (text.value is not empty or integer is not empty) %}
+    <span class="challenge-balidea-text-error">{{ 'Need to'|t ~ ' ' }}
+      <a href="
+        {{ url('challenge_balidea_module.settings_form',
+                {'destination': path('<current>')}
+              )
+        }}">{{ 'configure the module'|t }}
+      </a>
+    </span>
+  {% endif %}
+</div>

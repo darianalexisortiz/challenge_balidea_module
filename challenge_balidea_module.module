@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Challenge Balidea module.
+ */
+
+ /**
+ * Implements hook_preprocess_html().
+ */
+function challenge_balidea_module_preprocess_html(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node && $node instanceof \Drupal\node\NodeInterface && $node->getType() === 'page') {
+    $variables['attributes']['class'][] = 'node-type-' . $node->getType();
+  }
+}
+
+/**
+ * Implementa hook_theme().
+ */
+function challenge_balidea_module_theme($existing, $type, $theme, $path) {
+  return [
+    'challenge_balidea' => [
+      'variables' => ['text' => NULL, 'integer' => NULL],
+      'template' => 'challenge_balidea',
+    ],
+  ];
+}

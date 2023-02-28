@@ -1,0 +1,16 @@
+challenge_balidea_module.controller:
+  path: '/challenge-balidea'
+  defaults:
+    _title: 'Challenge Balidea'
+    _controller: '\Drupal\challenge_balidea_module\Controller\ModuleController::build'
+  requirements:
+    _permission: 'authenticated user'
+
+challenge_balidea_module.settings_form:
+  path: '/admin/config/system/challenge-balidea'
+  defaults:
+    _title: 'Challenge Balidea module settings'
+    _form: 'Drupal\challenge_balidea_module\Form\SettingsForm'
+  requirements:
+    _permission: 'access administration pages'
+
